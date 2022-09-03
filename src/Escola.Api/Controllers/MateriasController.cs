@@ -15,7 +15,7 @@ namespace Escola.Api.Controllers
         }
 
         //api/materia
-        [HttpGet] //nao consegui pesquisar por nome
+        [HttpGet] 
         public IActionResult ObterTodos(
             [FromQuery] string nome)
         {
@@ -38,6 +38,22 @@ namespace Escola.Api.Controllers
             _materiaServico.Inserir(materia);
             return StatusCode(StatusCodes.Status201Created);
         }
+
+        [HttpPut("{materiaId}")]
+        public IActionResult Put([FromRoute] int materiaId, [FromBody] MateriaDTO materia)
+        {
+            materia.Id = materiaId;
+            _materiaServico.Atualizar(materia);
+            return Ok();
+        }
+
+        [HttpDelete("{materiaId}")]
+        public IActionResult Delete([FromRoute] int materiaId)
+        {
+            _materiaServico.Excluir(materiaId);
+            return StatusCode(StatusCodes.Status204NoContent);
+        }
+
 
     }
 }
