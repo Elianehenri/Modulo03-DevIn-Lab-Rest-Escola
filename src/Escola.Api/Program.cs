@@ -11,6 +11,9 @@ builder.Services.AddDbContext<EscolaDBContexto>();
 
 builder.Services.AddScoped<IAlunoRepositorio,AlunoRepositorio>();
 builder.Services.AddScoped<IAlunoServico,AlunoServico>();
+builder.Services.AddScoped<IMateriaRepositorio, MateriaRepositorio>();
+builder.Services.AddScoped<IMateriaServico, MateriaServico>();
+
 
 
 builder.Services.AddControllers();
