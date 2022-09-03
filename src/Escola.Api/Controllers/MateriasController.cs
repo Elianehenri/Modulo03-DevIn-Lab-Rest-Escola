@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Escola.Api.Controllers
 {
-    [ApiController]
+    [Controller]
     [Route("api/[controller]")]
     public class MateriasController : ControllerBase
     {
@@ -14,8 +14,8 @@ namespace Escola.Api.Controllers
             _materiaServico = materiaServico;
         }
 
-
-        [HttpGet]
+        //api/materia
+        [HttpGet] //nao consegui pesquisar por nome
         public IActionResult ObterTodos(
             [FromQuery] string nome)
         {
@@ -23,6 +23,7 @@ namespace Escola.Api.Controllers
                 return Ok(_materiaServico.ObterPorNome(nome));
             return Ok(_materiaServico.ObterTodos());
         }
+
         [HttpGet("{materiaId}")]
         public IActionResult ObterPorId([FromRoute] int materiaId)
         {
@@ -30,7 +31,13 @@ namespace Escola.Api.Controllers
             return Ok(_materiaServico.ObterPorId(materiaId));
         }
 
-        
-        
+        [HttpPost]
+        public IActionResult Inserir(
+            [FromBody] MateriaDTO materia)
+        {
+            _materiaServico.Inserir(materia);
+            return StatusCode(StatusCodes.Status201Created);
+        }
+
     }
 }
