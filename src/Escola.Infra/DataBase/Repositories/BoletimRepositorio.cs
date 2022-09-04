@@ -23,9 +23,9 @@ namespace Escola.Infra.DataBase.Repositories
             _contexto.SaveChanges();
         }
 
-        public void Excluir(Boletim boletim,NotasMateria materia)
+        public void Excluir(Boletim boletim)
         {
-            _contexto.Notas.Remove(materia);
+            _contexto.Boletins.Remove(boletim);
             _contexto.SaveChanges();
         }
 
@@ -42,7 +42,7 @@ namespace Escola.Infra.DataBase.Repositories
 
         public IList<Boletim> ObterPorIdAluno(Guid id)
         {
-            return _contexto.Boletins.ToList();
+            return _contexto.Boletins.Where(b =>b.AlunoId == id).ToList();
         }
     }
 }

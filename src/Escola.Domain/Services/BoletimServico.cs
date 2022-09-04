@@ -31,20 +31,20 @@ namespace Escola.Domain.Services
             _boletimRepositorio.Atualizar(boletimDb);
         }
 
-        public void ExcluirMateria(int boletimId, int materiaId)
+        public void Excluir(int boletimId)
         {
             var boletimDb = _boletimRepositorio.ObterPorId(boletimId);
             if (boletimDb == null)
             {
                 throw new Exception("Boletim nao existe.");
             }
-            var materia = boletimDb.Notas.FirstOrDefault(m => m.Id == materiaId);
-            if (materia == null)
-            {
-                throw new Exception("Materia nao encontrada.");
-            }
+           // var boletim = boletimDb.Notas.FirstOrDefault(b => b.Id == boletimId);
+           // if (boletim == null)
+            //{
+               // throw new Exception("Materia nao encontrada.");
+            //}
          
-            _boletimRepositorio.Excluir(boletimDb, materia);
+            _boletimRepositorio.Excluir(boletimDb);
             
         }
     

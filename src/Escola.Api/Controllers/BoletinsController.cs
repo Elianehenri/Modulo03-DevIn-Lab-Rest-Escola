@@ -33,7 +33,7 @@ namespace Escola.Api.Controllers
 
         }
 
-        [HttpGet("aluno/{idaluno}/boletins")]
+        [HttpGet("~/api/alunos/{idAluno}/boletins")]//~anular controller base
         public IActionResult ObterPorIdAluno(
             [FromRoute] Guid idAluno)
         {

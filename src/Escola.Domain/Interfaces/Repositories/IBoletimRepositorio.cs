@@ -7,7 +7,7 @@ namespace Escola.Domain.Interfaces.Repositories
         IList<Boletim> ObterPorIdAluno(Guid id);
         Boletim ObterPorId(int id);
         void Inserir(Boletim boletim);
-        void Excluir(Boletim boletim, NotasMateria materia);
+        void Excluir(Boletim boletim);
         void Atualizar(Boletim boletim);
         
     }
