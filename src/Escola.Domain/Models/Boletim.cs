@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Escola.Domain.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,5 +19,19 @@ namespace Escola.Domain.Models
         public Boletim()
         {
         }
+
+        public Boletim(BoletimDTO boletim)
+        {
+            Periodo = boletim.Periodo;
+            Faltas = boletim.Faltas;
+            AlunoId = boletim.AlunoId;
+        }
+        public void Update(BoletimDTO boletim)
+        {
+            Periodo = boletim.Periodo;
+            Faltas = boletim.Faltas;
+            AlunoId = boletim.AlunoId;
+        }
+
     }
 }
