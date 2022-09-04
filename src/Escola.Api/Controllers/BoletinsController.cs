@@ -40,5 +40,14 @@ namespace Escola.Api.Controllers
             return Ok(_boletimServico.ObterPorIdAluno(idAluno));
         }
 
+        [HttpPost]
+
+        public IActionResult Inserir(
+            [FromBody]BoletimDTO boletim)
+        {
+            _boletimServico.Inserir(boletim);
+            return StatusCode(StatusCodes.Status201Created);
+        }
+
     }
 }
