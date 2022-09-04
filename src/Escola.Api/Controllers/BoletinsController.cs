@@ -64,14 +64,22 @@ namespace Escola.Api.Controllers
         {
             try
             {
-                
+
                 _boletimServico.Atualizar(boletim, id);
                 return StatusCode(StatusCodes.Status201Created);
-               
+            }
             catch
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Excluir(
+        [FromRoute] int id)
+        {
+            _boletimServico.Excluir(id);
+            return StatusCode(StatusCodes.Status204NoContent);
         }
 
     }
