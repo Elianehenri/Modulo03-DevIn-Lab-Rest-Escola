@@ -8,6 +8,15 @@ namespace Escola.Domain.DTO
 {
     public class AlunoDTO
     {
+
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public int Matricula { get; set; }
+        public string Nome { get; set; }
+        public string Sobrenome { get; set; }
+        public string Email { get; set; }
+        public DateTime DataNascimento { get; set; }
+
+
         public AlunoDTO()
         {
             
@@ -22,12 +31,6 @@ namespace Escola.Domain.DTO
             DataNascimento = aluno.DataNascimento;
         }
 
-        public Guid Id { get; set; } = Guid.NewGuid();
-        public int Matricula { get; set; }
-        public string Nome { get; set; }
-        public string Sobrenome { get; set; }
-        public string Email { get; set; }
-        public DateTime DataNascimento { get; set; }
         
     }
 }
