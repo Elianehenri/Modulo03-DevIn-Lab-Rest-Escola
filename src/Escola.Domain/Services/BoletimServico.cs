@@ -19,7 +19,7 @@ namespace Escola.Domain.Services
             _boletimRepositorio = boletimRepositorio;
         }
 
-        public void Atualizar(BoletimDTO boletim, int id)
+        public void Atualizar(BoletimDTO boletim,int id)
         {
             var boletimDb = _boletimRepositorio.ObterPorId(id);
             if (boletimDb == null)

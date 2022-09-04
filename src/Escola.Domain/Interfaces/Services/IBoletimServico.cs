@@ -16,6 +16,7 @@ namespace Escola.Domain.Interfaces.Services
         IList<BoletimDTO> ObterPorIdAluno(Guid id);
         void Inserir(BoletimDTO boletim);
         void Excluir(int id);
-        void Atualizar(BoletimDTO boletim,int id);
+        void Atualizar(BoletimDTO boletim, int id);
+        
     }
 }

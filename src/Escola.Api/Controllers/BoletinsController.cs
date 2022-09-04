@@ -21,7 +21,7 @@ namespace Escola.Api.Controllers
         public IActionResult ObterPorId(
             [FromRoute] int id)
         {
-            
+
             try
             {
                 return Ok(_boletimServico.ObterPorId(id));
@@ -37,16 +37,41 @@ namespace Escola.Api.Controllers
         public IActionResult ObterPorIdAluno(
             [FromRoute] Guid idAluno)
         {
+            try
+            { 
             return Ok(_boletimServico.ObterPorIdAluno(idAluno));
+            }
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+
         }
 
         [HttpPost]
 
         public IActionResult Inserir(
-            [FromBody]BoletimDTO boletim)
+            [FromBody] BoletimDTO boletim)
         {
             _boletimServico.Inserir(boletim);
             return StatusCode(StatusCodes.Status201Created);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Atualizar(
+            [FromRoute] int id, 
+            [FromBody] BoletimDTO boletim)
+        {
+            try
+            {
+                
+                _boletimServico.Atualizar(boletim, id);
+                return StatusCode(StatusCodes.Status201Created);
+               
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
         }
 
     }

@@ -40,7 +40,9 @@ namespace Escola.Api.Controllers
         }
 
         [HttpPut("{materiaId}")]
-        public IActionResult Put([FromRoute] int materiaId, [FromBody] MateriaDTO materia)
+        public IActionResult Put(
+            [FromRoute] int materiaId, 
+            [FromBody] MateriaDTO materia)
         {
             materia.Id = materiaId;
             _materiaServico.Atualizar(materia);
@@ -48,7 +50,8 @@ namespace Escola.Api.Controllers
         }
 
         [HttpDelete("{materiaId}")]
-        public IActionResult Delete([FromRoute] int materiaId)
+        public IActionResult Delete(
+            [FromRoute] int materiaId)
         {
             _materiaServico.Excluir(materiaId);
             return StatusCode(StatusCodes.Status204NoContent);

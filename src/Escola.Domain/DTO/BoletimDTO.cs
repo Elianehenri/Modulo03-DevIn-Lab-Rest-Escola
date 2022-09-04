@@ -9,7 +9,7 @@ namespace Escola.Domain.DTO
 {
    public class BoletimDTO
     {
-       // public int Id { get; set; }
+       
         public string Periodo { get; set; }
         public int Faltas { get; set; }
         public Guid AlunoId { get; set; }
