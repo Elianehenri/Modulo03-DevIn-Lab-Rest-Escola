@@ -14,6 +14,6 @@ namespace Escola.Domain.Interfaces.Services
         NotasMateriaDTO ObterPorId(int id);
         void InserirNotas(NotasMateriaDTO notasMateria);
         void ExcluirNotas(int id);
-        void AtualizarNotas(int id, NotasMateriaDTO notasMateria);
+        void AtualizarNotas( NotasMateriaDTO notasMateria);
     }
 }

@@ -19,13 +19,13 @@ namespace Escola.Api.Controllers
 
         [HttpGet("{id}")]
         public IActionResult ObterPorId(
-            [FromRoute]int id)
+            [FromRoute] int id)
         {
             try
             {
                 return Ok(_notasMateriaServico.ObterPorId(id));
             }
-            catch 
+            catch
             {
 
                 return StatusCode(StatusCodes.Status500InternalServerError);
@@ -53,7 +53,18 @@ namespace Escola.Api.Controllers
             _notasMateriaServico.InserirNotas(notasMateria);
             return StatusCode(StatusCodes.Status201Created);
         }
-          
+
+        [HttpPut("{notasMateriaId}")]
+        public IActionResult AtualizarNotas(
+            [FromRoute] int notasMateriaId,
+            [FromBody] NotasMateriaDTO notasMateria)
+        {
+            notasMateria.Id = notasMateriaId;
+            _notasMateriaServico.AtualizarNotas(notasMateria);
+            return Ok();
+        }
+
 
     }
 }
+

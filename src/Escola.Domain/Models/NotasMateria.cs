@@ -29,8 +29,8 @@ namespace Escola.Domain.Models
         }
         public void Update(NotasMateriaDTO notasMateria)
         {
-           Id = notasMateria.Id;
-           BoletimId = notasMateria.BoletimId;
+            Id = notasMateria.Id;
+            BoletimId = notasMateria.BoletimId;
             MateriaId = notasMateria.MateriaId;
             Nota = notasMateria.Nota;
         }

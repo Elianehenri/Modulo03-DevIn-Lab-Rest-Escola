@@ -17,7 +17,7 @@ namespace Escola.Infra.DataBase.Repositories
             _contexto = contexto;
         }
 
-        public void AtualizarNotas(int id, NotasMateria notas)
+        public void AtualizarNotas( NotasMateria notas)
         {
             _contexto.NotasMaterias.Update(notas);
             _contexto.SaveChanges();
