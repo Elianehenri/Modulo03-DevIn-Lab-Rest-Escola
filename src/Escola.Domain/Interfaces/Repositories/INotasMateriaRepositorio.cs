@@ -1,4 +1,5 @@
-﻿using Escola.Domain.Models;
+﻿using Escola.Domain.DTO;
+using Escola.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

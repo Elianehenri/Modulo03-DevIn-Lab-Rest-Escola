@@ -27,5 +27,6 @@ namespace Escola.Domain.DTO
             MateriaId = notasMateria.MateriaId;
             Nota = notasMateria.Nota;
         }
+
     }
 }

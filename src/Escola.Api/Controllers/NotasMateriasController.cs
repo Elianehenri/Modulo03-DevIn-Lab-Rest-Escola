@@ -9,11 +9,11 @@ namespace Escola.Api.Controllers
     [Route("api/[controller]")]
     public class NotasMateriasController : ControllerBase
     {
-        private readonly INotasMateriaServico _NotasMateriaServico;
+        private readonly INotasMateriaServico _notasMateriaServico;
 
         public NotasMateriasController(INotasMateriaServico notasMateriaServico)
         {
-            _NotasMateriaServico = notasMateriaServico;
+            _notasMateriaServico = notasMateriaServico;
         }
 
 
@@ -23,7 +23,7 @@ namespace Escola.Api.Controllers
         {
             try
             {
-                return Ok(_NotasMateriaServico.ObterPorId(id));
+                return Ok(_notasMateriaServico.ObterPorId(id));
             }
             catch 
             {
@@ -38,7 +38,7 @@ namespace Escola.Api.Controllers
         {
             try
             {
-                return Ok(_NotasMateriaServico.ObterPorBoletim(boletimId));
+                return Ok(_notasMateriaServico.ObterPorBoletim(boletimId));
             }
             catch
             {
@@ -50,7 +50,7 @@ namespace Escola.Api.Controllers
         public IActionResult InserirNotas(
           [FromBody] NotasMateriaDTO notasMateria)
         {
-            _NotasMateriaServico.InserirNotas(notasMateria);
+            _notasMateriaServico.InserirNotas(notasMateria);
             return StatusCode(StatusCodes.Status201Created);
         }
           

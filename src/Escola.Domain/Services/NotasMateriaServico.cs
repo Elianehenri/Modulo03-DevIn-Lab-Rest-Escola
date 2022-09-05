@@ -1,6 +1,8 @@
 ﻿using Escola.Domain.DTO;
+using Escola.Domain.Exceptions;
 using Escola.Domain.Interfaces.Repositories;
 using Escola.Domain.Interfaces.Services;
+using Escola.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +32,9 @@ namespace Escola.Domain.Services
 
         public void InserirNotas(NotasMateriaDTO notasMateria)
         {
-            throw new NotImplementedException();
+
+
+            _notasMateriaRepositorio.InserirNotas(new NotasMateria(notasMateria));
         }
 
         
