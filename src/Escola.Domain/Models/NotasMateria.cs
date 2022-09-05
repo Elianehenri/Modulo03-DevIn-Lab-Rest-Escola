@@ -27,13 +27,13 @@ namespace Escola.Domain.Models
             MateriaId = notasMateria.MateriaId;
             Nota = notasMateria.Nota;
         }
-        public void Update(NotasMateriaDTO notasMateria)
-        {
-            Id = notasMateria.Id;
-            BoletimId = notasMateria.BoletimId;
-            MateriaId = notasMateria.MateriaId;
-            Nota = notasMateria.Nota;
-        }
+        //public void Update(NotasMateriaDTO notasMateria)
+        //{
+        //    Id = notasMateria.Id;
+        //    BoletimId = notasMateria.BoletimId;
+        //    MateriaId = notasMateria.MateriaId;
+        //    Nota = notasMateria.Nota;
+        //}
 
 
     }

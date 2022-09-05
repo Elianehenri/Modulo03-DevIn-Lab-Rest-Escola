@@ -35,14 +35,16 @@ namespace Escola.Infra.DataBase.Repositories
             _contexto.SaveChanges();
         }
 
+
         public NotasMateria ObterPorId(int id)
         {
             return _contexto.NotasMaterias.Find(id);
         }
-
-        public List<NotasMateria> ObterTodos()
+        public List<NotasMateria> ObterPorBoletim(int boletimId)
         {
-            return _contexto.NotasMaterias.ToList();
+            return _contexto.NotasMaterias.Where(n => n.BoletimId == boletimId).ToList();
         }
+
+
     }
 }

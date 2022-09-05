@@ -33,29 +33,27 @@ namespace Escola.Domain.Services
             throw new NotImplementedException();
         }
 
+        
+
         public NotasMateriaDTO ObterPorId(int id)
         {
-            throw new NotImplementedException();
+            if (_notasMateriaRepositorio.ObterPorId(id) != null)
+            {
+                return new NotasMateriaDTO(_notasMateriaRepositorio.ObterPorId(id));
 
+            }
+            else
+            {
+                throw new Exception("Nota não existe.");
+            }
+            
         }
 
-        //public NotasMateriaDTO ObterPorId(int id)
-        //{
-        //if (_notasMateriaRepositorio.ObterPorId(id) != null)
-        //{
-        //    return new NotasMateriaDTO(_notasMateriaRepositorio.ObterPorId(id));
-
-        //}
-        //else
-        //{
-        //    throw new Exception("Nota não existe.");
-        //}
-        // return new NotasMateriaDTO(_notasMateriaRepositorio.ObterPorId(id));    
-        // }
-
-        public IList<NotasMateriaDTO> ObterTodos()
+        public IList<NotasMateriaDTO> ObterPorBoletim(int boletimId)
         {
-            throw new NotImplementedException();
+            return _notasMateriaRepositorio.ObterPorBoletim(boletimId)
+                    .Select(n => new NotasMateriaDTO(n)).ToList();
+            
         }
     }
 }

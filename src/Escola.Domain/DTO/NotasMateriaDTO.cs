@@ -13,14 +13,14 @@ namespace Escola.Domain.DTO
         public int BoletimId { get; set; }
         public int MateriaId { get; set; }
 
-        public int Nota { get; set; }
+        public double Nota { get; set; }
 
 
         public NotasMateriaDTO()
         {
         }
 
-        public NotasMateriaDTO(NotasMateriaDTO notasMateria)
+        public NotasMateriaDTO(NotasMateria notasMateria)
         {
             Id = notasMateria.Id;
             BoletimId = notasMateria.BoletimId;
