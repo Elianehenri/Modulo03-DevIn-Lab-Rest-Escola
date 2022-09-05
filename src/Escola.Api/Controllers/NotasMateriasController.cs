@@ -54,14 +54,22 @@ namespace Escola.Api.Controllers
             return StatusCode(StatusCodes.Status201Created);
         }
 
-        [HttpPut("{notasMateriaId}")]
+        [HttpPut("{notasMateriaId}")]//"{notasMateriaId}"
         public IActionResult AtualizarNotas(
             [FromRoute] int notasMateriaId,
             [FromBody] NotasMateriaDTO notasMateria)
         {
             notasMateria.Id = notasMateriaId;
-            _notasMateriaServico.AtualizarNotas(notasMateria);
+            _notasMateriaServico.AtualizarNotas( notasMateria);
             return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult ExcluirNotas(
+            [FromRoute] int id)
+        {
+            _notasMateriaServico.ExcluirNotas(id);
+                return StatusCode(StatusCodes.Status200OK);
         }
 
 

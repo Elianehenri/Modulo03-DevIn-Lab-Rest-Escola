@@ -19,11 +19,12 @@ namespace Escola.Infra.DataBase.Repositories
 
         public void AtualizarNotas( NotasMateria notas)
         {
+          
             _contexto.NotasMaterias.Update(notas);
             _contexto.SaveChanges();
         }
 
-        public void ExcluirNotas(int id, NotasMateria notas)
+        public void ExcluirNotas( NotasMateria notas)
         {
             _contexto.NotasMaterias.Remove(notas);
             _contexto.SaveChanges();
@@ -45,6 +46,9 @@ namespace Escola.Infra.DataBase.Repositories
             return _contexto.NotasMaterias.Where(n => n.BoletimId == boletimId).ToList();
         }
 
-
+        public bool NotasExiste(int id)
+        {
+            return _contexto.NotasMaterias.Any(ne => ne.Id == id);
+        }
     }
 }

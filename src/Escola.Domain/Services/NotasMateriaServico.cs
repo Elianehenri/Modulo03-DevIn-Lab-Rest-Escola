@@ -23,6 +23,7 @@ namespace Escola.Domain.Services
         public void AtualizarNotas( NotasMateriaDTO notasMateria)
         {
             
+           
                 var notasMateriaDB = _notasMateriaRepositorio.ObterPorId(notasMateria.Id);
                 notasMateriaDB.Update(notasMateria);//vem da classe notasMateria
                 _notasMateriaRepositorio.AtualizarNotas(notasMateriaDB);
@@ -31,7 +32,15 @@ namespace Escola.Domain.Services
 
         public void ExcluirNotas(int id)
         {
-            throw new NotImplementedException();
+            if (!_notasMateriaRepositorio.NotasExiste(id))
+            {
+                throw new NotImplementedException("Nota nao encontrada.");
+
+            }
+            NotasMateria notasMateria = _notasMateriaRepositorio.ObterPorId(id);
+            _notasMateriaRepositorio.ExcluirNotas(notasMateria);
+
+
         }
 
         public void InserirNotas(NotasMateriaDTO notasMateria)
