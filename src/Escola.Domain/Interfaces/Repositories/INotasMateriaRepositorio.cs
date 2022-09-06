@@ -10,6 +10,7 @@ namespace Escola.Domain.Interfaces.Repositories
 {
     public interface INotasMateriaRepositorio
     {
+       
         public List<NotasMateria> ObterPorBoletim(int boletimId);
         public NotasMateria ObterPorId(int id);
         public void InserirNotas(NotasMateria notasMateria);

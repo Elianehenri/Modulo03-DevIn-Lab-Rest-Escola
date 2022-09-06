@@ -23,6 +23,8 @@ namespace Escola.Api.Controllers
                 return Ok(_materiaServico.ObterPorNome(nome));
             return Ok(_materiaServico.ObterTodos());
         }
+      
+      
 
         [HttpGet("{materiaId}")]
         public IActionResult ObterPorId([FromRoute] int materiaId)

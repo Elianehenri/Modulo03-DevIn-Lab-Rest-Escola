@@ -1,5 +1,6 @@
 ﻿using Escola.Domain.DTO;
 using Escola.Domain.Interfaces.Services;
+using Escola.Domain.Models;
 using Escola.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -46,6 +47,7 @@ namespace Escola.Api.Controllers
             }
 
         }
+        
         [HttpPost]
         public IActionResult InserirNotas(
           [FromBody] NotasMateriaDTO notasMateria)

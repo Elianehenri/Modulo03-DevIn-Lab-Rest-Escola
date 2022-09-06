@@ -72,5 +72,17 @@ namespace Escola.Domain.Services
                     .Select(n => new NotasMateriaDTO(n)).ToList();
             
         }
+        //public IList<NotasMateriaDTO> ObterTodos(Paginacao paginacao)
+        //{
+            // var alunosResposta = new List<AlunoDTO>();
+            // var alunos=  _alunoRepositorio.ObterTodos();
+            // foreach (var aluno in alunos){
+            //     alunosResposta.Add(new AlunoDTO(aluno));
+            // }
+            // return alunosResposta;
+
+            //return _notasMateriaRepositorio.ObterTodos(paginacao)
+            //                .Select(x => new NotasMateriaDTO(x)).ToList();
+        //}
     }
 }

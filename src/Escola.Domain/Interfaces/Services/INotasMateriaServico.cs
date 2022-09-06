@@ -10,6 +10,7 @@ namespace Escola.Domain.Interfaces.Services
 {
     public interface INotasMateriaServico
     {
+      
         public IList<NotasMateriaDTO> ObterPorBoletim(int boletimId);
         NotasMateriaDTO ObterPorId(int id);
         void InserirNotas(NotasMateriaDTO notasMateria);
