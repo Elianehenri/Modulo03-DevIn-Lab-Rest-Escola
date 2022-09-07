@@ -44,10 +44,20 @@ namespace Escola.Infra.DataBase.Repositories
         {
             return _contexto.Materias.Where(x => x.Nome == nome).ToList();
         }
-        public IList<Materia> ObterTodos()
+        public IList<Materia> ObterTodos(Paginacao paginacao)
         {
-            return _contexto.Materias.ToList();
-      
+            return _contexto.Materias
+             .Take(paginacao.Take)
+             .Skip(paginacao.Skip)
+             .ToList();
+
+        }
+
+       
+
+        public int ObterTotal()
+        {
+            return _contexto.Materias.Count();
         }
     }
 }

@@ -54,13 +54,21 @@ namespace Escola.Domain.Services
 
             if (jaExiste.Count > 0)
                 throw new DuplicadoException("Matéria já existe");
-            return _materiaRepositorio.ObterPorNome(nome).Select(x => new MateriaDTO(x)).ToList();
+            return _materiaRepositorio.ObterPorNome(nome)
+                .Select(x => new MateriaDTO(x))
+                .ToList();
         }
 
-        public IList<MateriaDTO> ObterTodos()
+        public IList<MateriaDTO> ObterTodos(Paginacao paginacao)
         {
-            return _materiaRepositorio.ObterTodos()
-                                     .Select(x => new MateriaDTO(x)).ToList();
+            return _materiaRepositorio
+                .ObterTodos(paginacao)
+                .Select(x => new MateriaDTO(x))
+                .ToList();
+        }
+        public int ObterTotal()
+        {
+            return _materiaRepositorio.ObterTotal();
         }
     }
 }
