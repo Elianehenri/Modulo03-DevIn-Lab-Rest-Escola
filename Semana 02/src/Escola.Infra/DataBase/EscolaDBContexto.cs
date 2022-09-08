@@ -16,7 +16,7 @@ namespace Escola.Infra.DataBase
         public DbSet<NotasMateria> NotasMaterias { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options){
-            options.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=EscolaDB;Trusted_Connection=True;");
+            options.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=EscolaDB1;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
