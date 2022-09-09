@@ -1,8 +1,7 @@
 ﻿using Escola.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using Escola.Domain.DTO;
-using Escola.Domain.Services;
-using Escola.Domain.Models;
+
 
 namespace Escola.Api.Controllers
 {
@@ -30,7 +29,6 @@ namespace Escola.Api.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
-
         }
 
         [HttpGet("~/api/alunos/{idAluno}/boletins")]//~anular controller base
@@ -45,7 +43,6 @@ namespace Escola.Api.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
-
         }
 
         [HttpPost]
