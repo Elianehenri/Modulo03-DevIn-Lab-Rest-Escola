@@ -53,8 +53,6 @@ namespace Escola.Infra.DataBase.Repositories
 
         }
 
-       
-
         public int ObterTotal()
         {
             return _contexto.Materias.Count();

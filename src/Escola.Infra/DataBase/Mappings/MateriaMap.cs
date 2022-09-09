@@ -21,7 +21,7 @@ namespace Escola.Infra.DataBase.Mappings
                     .UseIdentityColumn()
                     .ValueGeneratedOnAdd();
 
-            builder.Property(x => x.Nome)
+            builder.Property(m => m.Nome)
                     .HasColumnType("varchar")
                     .HasMaxLength(80)
                     .HasColumnName("Nome");
