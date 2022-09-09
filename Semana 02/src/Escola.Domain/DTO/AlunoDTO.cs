@@ -30,15 +30,15 @@ namespace Escola.Domain.DTO
             Sobrenome = aluno.Sobrenome;
             DataNascimento = aluno.DataNascimento;
         }
-        public AlunoDTO(AlunoV2DTO aluno)//map
-        {
-            Id = aluno.Id;
-            Nome = aluno.Nome;
-            Email = aluno.Email;
-            Matricula = aluno.RA;
-            Sobrenome = aluno.Sobrenome;
-            DataNascimento = aluno.DataNascimento;
-        }
+        //public AlunoDTO(AlunoV2DTO aluno)//map //deve ser excluido,poruqe foi feito o mapper
+        //{
+        //    Id = aluno.Id;
+        //    Nome = aluno.Nome;
+        //    Email = aluno.Email;
+        //    Matricula = aluno.RA;
+        //    Sobrenome = aluno.Sobrenome;
+        //    DataNascimento = aluno.DataNascimento;
+        //}
         public string Boletim { get { return $"http://localhost:5216/api/alunos/{Id}/Boletims"; } private set { } }
 
         // private string _boletim;

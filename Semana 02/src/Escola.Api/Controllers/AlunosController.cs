@@ -40,6 +40,7 @@ namespace Escola.Api.Controllers
                 var totalRegistros = _alunoServico.ObterTotal();
 
                 Response.Headers.Add("X-Paginacao-TotalResgistros", totalRegistros.ToString());
+
                 Response.Cookies.Append("TesteCookie",
                            Newtonsoft.Json.JsonConvert.SerializeObject(paginacao),
                            new CookieOptions()
