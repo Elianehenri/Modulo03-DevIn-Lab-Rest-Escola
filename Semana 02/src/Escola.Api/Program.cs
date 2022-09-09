@@ -4,7 +4,7 @@ using Escola.Infra.DataBase.Repositories;
 using Escola.Domain.Services;
 using Escola.Infra.DataBase;
 using Escola.Api.Config;
-
+//using Escola.Api.Config.IoC;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<EscolaDBContexto>();
@@ -21,7 +21,8 @@ builder.Services.AddScoped<INotasMateriaServico, NotasMateriaServico>();
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped(typeof(CacheService<>));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+                .AddNewtonsoftJson();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();

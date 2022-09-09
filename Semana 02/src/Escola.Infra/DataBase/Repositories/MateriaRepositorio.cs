@@ -40,6 +40,7 @@ namespace Escola.Infra.DataBase.Repositories
             return _contexto.Materias.Find(id);
         }
 
+
         public List<Materia> ObterPorNome(string nome)
         {
             return _contexto.Materias.Where(x => x.Nome == nome).ToList();
@@ -47,13 +48,11 @@ namespace Escola.Infra.DataBase.Repositories
         public IList<Materia> ObterTodos(Paginacao paginacao)
         {
             return _contexto.Materias
-             .Take(paginacao.Take)
-             .Skip(paginacao.Skip)
-             .ToList();
+               .Take(paginacao.Take)
+                .Skip(paginacao.Skip)
+               .ToList();
 
         }
-
-       
 
         public int ObterTotal()
         {
