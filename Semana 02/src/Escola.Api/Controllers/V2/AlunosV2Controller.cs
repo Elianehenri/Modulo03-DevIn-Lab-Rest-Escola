@@ -4,20 +4,25 @@ using Escola.Domain.Interfaces.Services;
 using Escola.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace Escola.Api.Controllers.V2
 {
 
     [ApiController]
-    [Route("api/v2/alunos")]
+    [ApiVersion("2")]
+    [Route("api/v{version:apiVersion}/alunos")]
     public class AlunosV2Controller : ControllerBase
     {
         private readonly IMapper _mapper;
         private readonly IAlunoServico _alunoServico;
+
         public AlunosV2Controller(IAlunoServico alunoServico, IMapper mapper)
         {
             _mapper = mapper;
             _alunoServico = alunoServico;
         }
+
+
         [HttpGet]
         public IActionResult ObterTodos(int skip = 0, int take = 5)
         {
@@ -29,7 +34,17 @@ namespace Escola.Api.Controllers.V2
 
             return Ok();//_alunoServico.ObterTodos(paginacao).Select(x => new AlunoV2DTO(x))
         }
+        //[HttpGet]
+        //public IActionResult ObterTodos(int skip = 0, int take = 5)
+        //{
+        //    var paginacao = new Paginacao(take, skip);
 
+        //    var totalRegistros = _alunoServico.ObterTotal();
+
+        //    Response.Headers.Add("X-Paginacao-TotalResgistros", totalRegistros.ToString());
+
+        //    return Ok(_alunoServico.ObterTodos(paginacao).Select(x => new AlunoV2DTO(x)));
+        //}
 
         [HttpGet("{id}")]
         public IActionResult ObterPorId(Guid id)
