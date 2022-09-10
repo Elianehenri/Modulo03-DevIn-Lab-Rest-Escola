@@ -1,7 +1,11 @@
-﻿using Escola.Domain.DTO;
+﻿using Escola.Api.Config;
+using Escola.Domain.DTO;
 using Escola.Domain.Interfaces.Services;
 using Escola.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
+
+
 
 namespace Escola.Api.Controllers
 {
@@ -10,10 +14,15 @@ namespace Escola.Api.Controllers
     public class MateriasController : ControllerBase
     {
         private readonly IMateriaServico _materiaServico;
-        public MateriasController(IMateriaServico materiaServico)
+        private readonly IMemoryCache _cache;
+
+        public MateriasController(IMateriaServico materiaServico, IMemoryCache cache)
         {
             _materiaServico = materiaServico;
+            _cache = cache;
         }
+
+
 
         //api/materia
         [HttpGet] 
@@ -22,6 +31,7 @@ namespace Escola.Api.Controllers
              int skip = 0,
              int take = 10)
         {
+            IList<MateriaDTO> materias;
             var paginacao = new Paginacao(take, skip);
             var totalRegistros = _materiaServico.ObterTotal();
 
@@ -30,14 +40,22 @@ namespace Escola.Api.Controllers
                 return Ok(_materiaServico.ObterPorNome(nome));
             return Ok(_materiaServico.ObterTodos(paginacao));
         }
-      
-      
+
+
 
         [HttpGet("{materiaId}")]
         public IActionResult ObterPorId([FromRoute] int materiaId)
         {
 
             return Ok(_materiaServico.ObterPorId(materiaId));
+            if (!_cache.TryGetValue<MateriaDTO>($"materia:{materiaId}", out MateriaDTO materia))
+            {
+                materia = _materiaServico.ObterPorId(materiaId);
+                _cache.Set<MateriaDTO>($"materia:{materiaId}",
+                                        materia,
+                                        TimeSpan.FromHours(5));
+            }
+            return Ok(materia);
         }
 
         [HttpPost]
@@ -55,6 +73,8 @@ namespace Escola.Api.Controllers
         {
             materia.Id = materiaId;
             _materiaServico.Atualizar(materia);
+            _cache.Remove($"materia:{materiaId}");
+
             return Ok();
         }
 
@@ -63,6 +83,7 @@ namespace Escola.Api.Controllers
             [FromRoute] int materiaId)
         {
             _materiaServico.Excluir(materiaId);
+            _cache.Remove($"materia:{materiaId}");
             return StatusCode(StatusCodes.Status204NoContent);
         }
 

@@ -48,7 +48,7 @@ builder.Services.AddSingleton(AutoMapperConfig.Configure());
 
 builder.Services.AddControllers()
                 .AddNewtonsoftJson();
-//builder.Services.AddSwaggerGen();
+
 builder.Services.AddSwaggerGen(config => {
     config.SwaggerDoc("v1", new OpenApiInfo
     {
@@ -60,6 +60,7 @@ builder.Services.AddSwaggerGen(config => {
             Email = "eliane@eliane.com.br"
         }
     });
+
     config.SwaggerDoc("v2", new OpenApiInfo
     {
         Title = "Escola API",
