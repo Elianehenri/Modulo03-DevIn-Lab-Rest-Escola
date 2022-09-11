@@ -26,7 +26,7 @@ namespace Escola.Domain.Services
            
                 var notasMateriaDB = _notasMateriaRepositorio.ObterPorId(notasMateria.Id);
                 notasMateriaDB.Update(notasMateria);//vem da classe notasMateria
-                _notasMateriaRepositorio.AtualizarNotas(notasMateriaDB);
+                _notasMateriaRepositorio.Atualizar(notasMateriaDB);
             
         }
 
@@ -38,7 +38,7 @@ namespace Escola.Domain.Services
 
             }
             NotasMateria notasMateria = _notasMateriaRepositorio.ObterPorId(id);
-            _notasMateriaRepositorio.ExcluirNotas(notasMateria);
+            _notasMateriaRepositorio.Excluir(notasMateria);
 
 
         }
@@ -47,7 +47,7 @@ namespace Escola.Domain.Services
         {
         
 
-            _notasMateriaRepositorio.InserirNotas(new NotasMateria(notasMateria));
+            _notasMateriaRepositorio.Inserir(new NotasMateria(notasMateria));
         }
 
         
