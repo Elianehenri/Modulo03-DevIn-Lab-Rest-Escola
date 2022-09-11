@@ -14,49 +14,20 @@ namespace Escola.Api.Controllers
     public class MateriasController : ControllerBase
     {
         private readonly IMateriaServico _materiaServico;
-        private readonly IMemoryCache _cache;
+        private readonly CacheService<MateriaDTO> _cacheServicePorId;
+        private readonly CacheService<IList<MateriaDTO>> _cacheServicePorNome;
 
-        public MateriasController(IMateriaServico materiaServico, IMemoryCache cache)
+        public MateriasController(IMateriaServico materiaServico,
+                    CacheService<MateriaDTO> cacheServicePorId,
+                     CacheService<IList<MateriaDTO>> cacheServicePorNome)
         {
             _materiaServico = materiaServico;
-            _cache = cache;
+            cacheServicePorId.Config("materiaPI", TimeSpan.FromHours(6));
+            cacheServicePorNome.Config("materiaPN", TimeSpan.FromHours(6));
+            _cacheServicePorId = cacheServicePorId;
+            _cacheServicePorNome = cacheServicePorNome;
         }
 
-
-
-        //api/materia
-        [HttpGet] 
-        public IActionResult ObterTodos(
-            [FromQuery] string nome,
-             int skip = 0,
-             int take = 10)
-        {
-            IList<MateriaDTO> materias;
-            var paginacao = new Paginacao(take, skip);
-            var totalRegistros = _materiaServico.ObterTotal();
-
-            Response.Headers.Add("x-Paginacao-TotalRegistros", totalRegistros.ToString());
-            if (!string.IsNullOrEmpty(nome))
-                return Ok(_materiaServico.ObterPorNome(nome));
-            return Ok(_materiaServico.ObterTodos(paginacao));
-        }
-
-
-
-        [HttpGet("{materiaId}")]
-        public IActionResult ObterPorId([FromRoute] int materiaId)
-        {
-
-            return Ok(_materiaServico.ObterPorId(materiaId));
-            if (!_cache.TryGetValue<MateriaDTO>($"materia:{materiaId}", out MateriaDTO materia))
-            {
-                materia = _materiaServico.ObterPorId(materiaId);
-                _cache.Set<MateriaDTO>($"materia:{materiaId}",
-                                        materia,
-                                        TimeSpan.FromHours(5));
-            }
-            return Ok(materia);
-        }
 
         [HttpPost]
         public IActionResult Inserir(
@@ -68,12 +39,14 @@ namespace Escola.Api.Controllers
 
         [HttpPut("{materiaId}")]
         public IActionResult Put(
-            [FromRoute] int materiaId, 
+            [FromRoute] int materiaId,
             [FromBody] MateriaDTO materia)
         {
             materia.Id = materiaId;
             _materiaServico.Atualizar(materia);
-            _cache.Remove($"materia:{materiaId}");
+            _cacheServicePorId.Remove($"{materiaId}");
+
+            _cacheServicePorNome.Remove(materia.Nome);
 
             return Ok();
         }
@@ -83,10 +56,125 @@ namespace Escola.Api.Controllers
             [FromRoute] int materiaId)
         {
             _materiaServico.Excluir(materiaId);
-            _cache.Remove($"materia:{materiaId}");
+            _cacheServicePorId.Remove($"{materiaId}");
             return StatusCode(StatusCodes.Status204NoContent);
         }
 
+
+        //api/materia
+        [HttpGet]
+        public IActionResult ObterTodos([FromQuery] string nome,
+                                        [FromQuery] int skip = 0,
+                                        [FromQuery] int take = 5)
+        {
+            IList<MateriaDTO> materias;
+
+            if (!string.IsNullOrEmpty(nome))
+            {
+                if (!_cacheServicePorNome.TryGetValue(nome, out materias))
+                {
+                    materias = _materiaServico.ObterPorNome(nome);
+                    _cacheServicePorNome.Set(nome, materias);
+                }
+            }
+            else
+            {
+                var paginacao = new Paginacao(take, skip);
+                materias = _materiaServico.ObterTodos(paginacao);
+            }
+            var uriBase = $"{Request.Scheme}://{Request.Host}";
+            if (materias.Count > 0 &&
+                materias.First().Links == null)
+            {
+                foreach (var materia in materias)
+                {
+                    materia.Links = GerarHateoasMateria(uriBase, materia);
+                }
+            }
+            var retorno = new BaseDTO<IList<MateriaDTO>>()
+            {
+                Data = materias,
+                Links = GerarHateoasMateriasLista(uriBase, take, skip, 3)
+            };
+
+            return Ok(retorno);
+        }
+        [HttpGet("{materiaId}")]
+        public IActionResult ObterPorId([FromRoute] int materiaId)
+        {
+            if (!_cacheServicePorId.TryGetValue($"{materiaId}", out MateriaDTO materia))
+            {
+                materia = _materiaServico.ObterPorId(materiaId);
+
+                var uriBase = $"{Request.Scheme}://{Request.Host}";
+
+                materia.Links = GerarHateoasMateria(uriBase, materia);
+
+                _cacheServicePorId.Set(materiaId.ToString(),
+                                        materia);
+            }
+            return Ok(materia);
+        }
+        private IList<HateoasDTO> GerarHateoasMateria(string url, MateriaDTO materia)
+        {
+            return new List<HateoasDTO>(){
+                new HateoasDTO(){
+                    Rel = "self",
+                    Type = "get",
+                    URI = $"{url}/api/materias/{materia.Id}"
+                },
+                new HateoasDTO(){
+                    Rel = "materia",
+                    Type = "delete",
+                    URI = $"{url}/api/materias/{materia.Id}"
+                },
+                new HateoasDTO(){
+                    Rel = "materia",
+                    Type = "put",
+                    URI = $"{url}/api/materias/{materia.Id}"
+                }
+            };
+        }
+
+        private IList<HateoasDTO> GerarHateoasMateriasLista(string url, int take, int skip, int total)
+        {
+            var lista = new List<HateoasDTO>(){
+                new HateoasDTO(){
+                    Rel = "self",
+                    Type = "get",
+                    URI = $"{url}/api/materias?take={take}&skip={skip}"
+                }
+            };
+
+            var razao = take - skip;
+
+            if (skip > 0)
+            {
+                var newSkip = skip - razao;
+                if (newSkip < 0)
+                    newSkip = 0;
+
+                lista.Add(new HateoasDTO()
+                {
+                    Rel = "prev",
+                    Type = "get",
+                    URI = $"{url}/api/materias?take={take - razao}&skip={newSkip}"
+                });
+
+            }
+
+            if (take < total)
+            {
+                lista.Add(new HateoasDTO()
+                {
+                    Rel = "next",
+                    Type = "get",
+                    URI = $"{url}/api/materias?take={take + razao}&skip={skip + razao}"
+                });
+            }
+
+            return lista;
+        }
 
     }
 }
