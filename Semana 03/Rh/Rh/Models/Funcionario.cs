@@ -1,4 +1,5 @@
-﻿using Rh.Enuns;
+﻿using Rh.DTOs;
+using Rh.Enuns;
 
 namespace Rh.Models
 {
@@ -14,6 +15,30 @@ namespace Rh.Models
         {
         }
 
+        public Funcionario(FuncionarioDto funcionario)
+        {
+            Id = funcionario.Id;
+            Nome = funcionario.Nome;
+            Senha = funcionario.Senha;
+            Permissao = funcionario.Permissao;
+            Salario = funcionario.Salario;
+        }
+
+        public void Update(FuncionarioDto funcionario)
+        {
+            Nome = funcionario.Nome;
+            Senha = funcionario.Senha;
+            Permissao = funcionario.Permissao;
+            Salario = funcionario.Salario;
+        }
+
+        public void Update(Funcionario funcionario)
+        {
+            Nome = funcionario.Nome;
+            Senha = funcionario.Senha;
+            Permissao = funcionario.Permissao;
+            Salario = funcionario.Salario;
+        }
 
     }
 }
