@@ -5,7 +5,7 @@ using Rh.Models;
 
 namespace Rh.Repositories
 {
-    public class funcionarioRepositorio : IFuncionarioRepositorio
+    public class FuncionarioRepositorio : IFuncionarioRepositorio
     {
 
        private static List<Funcionario> ListaFuncionarios { get; set; } = new List<Funcionario> {
@@ -44,42 +44,41 @@ namespace Rh.Repositories
             },
 
         };
-        public void CadastrarFuncionario(Funcionario funcionario)
+        public  void CadastrarFuncionario(Funcionario funcionario)
         {
             funcionario.Id = 5;
              ListaFuncionarios.Add(funcionario);
            
         }
 
-        public void Delete(Funcionario funcionario)
+        public  void Delete(Funcionario funcionario)
         {
             ListaFuncionarios.RemoveAll(f => f.Id == funcionario.Id);
         }
 
-        public void Editar(Funcionario funcionario)
+        public  void Editar(Funcionario funcionario)
         {
-            var funcionarioBd = ListaFuncionarios.Find(f => f.Id == funcionario.Id);
-            funcionarioBd.Update(funcionario);
+            var funcionarioEd = ListaFuncionarios.Find(f => f.Id == funcionario.Id);
+            funcionarioEd.Update(funcionario);
         }
 
-        public bool ExisteFuncionario(Funcionario funcionario)
+        public  bool ExisteFuncionario(Funcionario funcionario)
         {
             return ListaFuncionarios.Any(f => f.Nome == funcionario.Nome && f.Senha == funcionario.Senha);
         }
 
-        public Funcionario ObterPorId(int id)
+        public  Funcionario ObterPorId(int id)
         {
-            //var funcionario = ListaFuncionarios.Find(f => f.Id == id);
-            var funcionario = ListaFuncionarios.Where(f => f.Id == id).First();
+            var funcionario = ListaFuncionarios.Find(f => f.Id == id);
+            //var funcionario = ListaFuncionarios.Where(f => f.Id == id).First();
             return funcionario;
         }
 
-        public Funcionario ObterPorUsuarioSenha(string nome, string senha)
+        public  Funcionario ObterPorUsuarioSenha(string nome, string senha)
         {
             return ListaFuncionarios.FirstOrDefault(f => f.Nome == nome && f.Senha == senha);
         }
 
-       
 
         public IList<Funcionario> ObterTodos()
         {

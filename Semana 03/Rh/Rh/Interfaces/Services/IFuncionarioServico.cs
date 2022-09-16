@@ -7,7 +7,7 @@ namespace Rh.Interfaces.Services
     {
 
         IList<FuncionarioDto> ObterTodos();
-        FuncionarioDto ObterPorId(string id);
+        FuncionarioDto ObterPorId(int id);
         FuncionarioDto ObterPorUsuarioSenha(FuncionarioLoginDto funcionario);
         void CadastrarFuncionario(FuncionarioDto funcionario);
         void Editar(FuncionarioDto funcionario);
