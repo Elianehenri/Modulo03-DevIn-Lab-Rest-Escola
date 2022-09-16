@@ -46,7 +46,7 @@ namespace Rh.Controllers
             return StatusCode(StatusCodes.Status201Created);
         }
 
-        [Authorize(Roles = "Administrador, Gerente")]
+        [Authorize(Roles = "Administrador, Gerente Geral")]
         [HttpDelete("excluir-funcionario/{id}")]
         public IActionResult ExcluirFuncionario(
         [FromRoute] int id)
@@ -59,7 +59,7 @@ namespace Rh.Controllers
             return NoContent();
         }
 
-        [Authorize(Roles = "Administrador, Gerente")]
+        [Authorize(Roles = "Administrador, Gerente Geral")]
         [HttpDelete("excluir-gerente/{id}")]
         public IActionResult ExcluirGerente(
         [FromRoute] int id)
@@ -69,7 +69,7 @@ namespace Rh.Controllers
             return NoContent();
         }
 
-        [Authorize(Roles = "Gerente")]
+        [Authorize(Roles = "Gerente Geral")]
         [HttpPut("alterar-salario/{id}")]
         public IActionResult AlterarSalario(
         [FromRoute] int id,

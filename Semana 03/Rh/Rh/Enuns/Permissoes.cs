@@ -7,7 +7,7 @@ namespace Rh.Enuns
     {
         [Display(Name = "Funcionário")]
         Funcionario = 1,
-        [Display(Name = "Gerente")]
+        [Display(Name = "Gerente Geral")]
         Gerente = 2,
         [Display(Name = "Administrador")]
         Administrador = 3
