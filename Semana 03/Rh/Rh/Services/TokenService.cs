@@ -1,5 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Extensions;
+using Rh.DTOs;
 using Rh.Models;
 using Rh.Security;
 using System.IdentityModel.Tokens.Jwt;
@@ -29,5 +30,6 @@ namespace Rh.Services
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
     }
 }

@@ -55,9 +55,6 @@ namespace Rh.Services
             _funcionarioRepositorio.Delete(new Funcionario(funcionario));
         }
 
-        FuncionarioDto IFuncionarioServico.ObterPorUsuarioSenha(FuncionarioLoginDto funcionario)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
