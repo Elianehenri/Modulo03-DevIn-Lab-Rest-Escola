@@ -14,7 +14,7 @@ namespace Rh.Repositories
                 Id= 1,
                 Nome = "Eliane",
                 Permissao = Permissoes.Administrador,
-                Salario = 12500m,
+                Salario = 12500,
                 Senha = "123"
             },
 
