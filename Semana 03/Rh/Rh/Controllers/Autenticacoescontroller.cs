@@ -7,6 +7,7 @@ namespace Rh.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+
     public class Autenticacoescontroller: ControllerBase
     {
         private readonly IFuncionarioServico _funcionarioServico;
