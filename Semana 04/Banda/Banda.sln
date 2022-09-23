@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banda.API", "Banda.API\Banda.API.csproj", "{87B73AEF-1818-4BAA-8142-27DC42890966}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banda.API", "Banda.API\Banda.API.csproj", "{87B73AEF-1818-4BAA-8142-27DC42890966}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banda.Domain", "Banda.Domain\Banda.Domain.csproj", "{35CEC01A-D924-4DDC-9B2C-D9B07589071B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banda.Domain", "Banda.Domain\Banda.Domain.csproj", "{35CEC01A-D924-4DDC-9B2C-D9B07589071B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banda.Infra", "Banda.Infra\Banda.Infra.csproj", "{B626A36D-ADEE-4823-873A-1A8753EB491C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{35CEC01A-D924-4DDC-9B2C-D9B07589071B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35CEC01A-D924-4DDC-9B2C-D9B07589071B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35CEC01A-D924-4DDC-9B2C-D9B07589071B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B626A36D-ADEE-4823-873A-1A8753EB491C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B626A36D-ADEE-4823-873A-1A8753EB491C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B626A36D-ADEE-4823-873A-1A8753EB491C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B626A36D-ADEE-4823-873A-1A8753EB491C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
