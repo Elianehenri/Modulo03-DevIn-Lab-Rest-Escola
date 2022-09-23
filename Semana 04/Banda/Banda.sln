@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banda.Domain", "Banda.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banda.Infra", "Banda.Infra\Banda.Infra.csproj", "{B626A36D-ADEE-4823-873A-1A8753EB491C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banda.DI", "Banda.DI\Banda.DI.csproj", "{76213508-9F56-4742-86F5-9D25E18E0EC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B626A36D-ADEE-4823-873A-1A8753EB491C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B626A36D-ADEE-4823-873A-1A8753EB491C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B626A36D-ADEE-4823-873A-1A8753EB491C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76213508-9F56-4742-86F5-9D25E18E0EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76213508-9F56-4742-86F5-9D25E18E0EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76213508-9F56-4742-86F5-9D25E18E0EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76213508-9F56-4742-86F5-9D25E18E0EC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
