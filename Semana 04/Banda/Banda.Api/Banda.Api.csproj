@@ -19,4 +19,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Banda.DI\Banda.DI.csproj" />
+    <ProjectReference Include="..\Banda.Domain\Banda.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

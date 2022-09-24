@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Banda.Domain\Banda.Domain.csproj" />
+    <ProjectReference Include="..\Banda.Infra\Banda.Infra.csproj" />
+  </ItemGroup>
+
 </Project>
