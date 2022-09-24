@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandaTocar.API", "BandaToca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandaTocar.Domain", "BandaTocar.Domain\BandaTocar.Domain.csproj", "{65370CDE-BE79-4341-BF8B-3743053677DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandaTocar.DI", "BandaTocar.DI\BandaTocar.DI.csproj", "{42759940-4035-4D63-9071-49951F14192A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandaTocar.Infra", "BandaTocar.Infra\BandaTocar.Infra.csproj", "{C340FF23-7304-4573-9A84-7EA8F1DB29E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{65370CDE-BE79-4341-BF8B-3743053677DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65370CDE-BE79-4341-BF8B-3743053677DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65370CDE-BE79-4341-BF8B-3743053677DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42759940-4035-4D63-9071-49951F14192A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42759940-4035-4D63-9071-49951F14192A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42759940-4035-4D63-9071-49951F14192A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42759940-4035-4D63-9071-49951F14192A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C340FF23-7304-4573-9A84-7EA8F1DB29E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C340FF23-7304-4573-9A84-7EA8F1DB29E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C340FF23-7304-4573-9A84-7EA8F1DB29E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C340FF23-7304-4573-9A84-7EA8F1DB29E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
