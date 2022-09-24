@@ -11,8 +11,8 @@
     <Folder Include="Interfaces\" />
     <Folder Include="DTOs\" />
     <Folder Include="Services\" />
-     <InternalsVisibleTo Include="Banda.Infra" />
-    <InternalsVisibleTo Include="Banda.DI" /> 
+     <InternalsVisibleTo Include="BandaTocar.Infra" />
+    <InternalsVisibleTo Include="BandaTocar.DI" /> 
   </ItemGroup>
 
 </Project>
