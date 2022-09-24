@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Banda.API.Controllers
+namespace BandaTocar.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

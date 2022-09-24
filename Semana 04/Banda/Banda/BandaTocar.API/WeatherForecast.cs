@@ -1,4 +1,4 @@
-namespace Banda.API
+namespace BandaTocar.API
 {
     public class WeatherForecast
     {
