@@ -1,33 +1,55 @@
-﻿using Banda.Domain.DTOs;
+﻿using AutoMapper;
+using Banda.Domain.DTOs;
+using Banda.Domain.Interfaces.Repositories;
 using Banda.Domain.Interfaces.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Banda.Domain.Models;
 
 namespace Banda.Domain.Services
 {
     public class TocarServices : ITocarService
     {
+        private readonly ITocarRepositorio _tocarRepositorio;
+        private readonly IMapper _mapper;
+
+        public TocarServices(ITocarRepositorio tocarRepositorio, IMapper mapper)
+        {
+            _tocarRepositorio = tocarRepositorio;
+            _mapper = mapper;
+        }
+
         public void Alterar(TocarDTO dto)
         {
-            throw new NotImplementedException();
+            var tocarDb = _tocarRepositorio.Listar().FirstOrDefault(t => t.Id == dto.Id);
+            if (tocarDb == null)
+               
+            {
+                throw new Exception("Musica não encontrada.");
+            }
+            tocarDb.Update(dto);
+            _tocarRepositorio.Alterar(tocarDb);
         }
 
         public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            var tocarDb = _tocarRepositorio.Listar().FirstOrDefault(t => t.Id == id);
+            if (tocarDb == null)
+
+            {
+                throw new Exception("Musica não encontrada.");
+               
+            }
+            _tocarRepositorio.Excluir(tocarDb);
+
         }
 
-        public void Inserir(TocarDTO dto)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public IList<TocarDTO> Listar()
         {
-            throw new NotImplementedException();
+
+            return _tocarRepositorio.Listar()
+                .Select(t => _mapper.Map<TocarDTO>(t))
+                .ToList();
         }
     }
 }

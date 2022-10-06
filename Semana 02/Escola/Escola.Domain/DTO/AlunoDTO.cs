@@ -39,7 +39,7 @@ namespace Escola.Domain.DTO
         //    Sobrenome = aluno.Sobrenome;
         //    DataNascimento = aluno.DataNascimento;
         //}
-        public string Boletim { get { return $"http://localhost:5216/api/alunos/{Id}/Boletims"; } private set { } }
+        //public string Boletim { get { return $"http://localhost:5216/api/alunos/{Id}/Boletims"; } private set { } }
 
         // private string _boletim;
 

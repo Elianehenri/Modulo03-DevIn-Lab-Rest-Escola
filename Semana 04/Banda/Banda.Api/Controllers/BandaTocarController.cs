@@ -11,19 +11,49 @@ namespace Banda.Api.Controllers
     {
 
         private  readonly ITocarService _tocarService;
+        private readonly ITocarPostService _tocarPost;
 
-        public BandaTocarController(ITocarService tocarService)
+        public BandaTocarController(ITocarService tocarService, ITocarPostService tocarPost)
         {
             _tocarService = tocarService;
+            _tocarPost = tocarPost;
+        }
+
+        [HttpGet]
+        [Route("listar")]
+
+        public IActionResult Listar()
+        {
+            return Ok(_tocarService.Listar());
         }
 
         [HttpPost]
+        [Route("inserir")]
         public IActionResult Criar(
-            [FromBody]TocarDTO tocar)
+            [FromBody] TocarDTO dto)
         {
-            _tocarService.Inserir(tocar);
-             return Ok(tocar);
-            //return StatusCode(StatusCodes.Status201Created);
+            _tocarPost.Inserir(dto);
+            return Created("api/tocar", dto);
+            
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Alterar(
+       [FromRoute] int id,
+       [FromBody] TocarDTO dto
+   )
+        {
+            dto.Id = id;
+            _tocarService.Alterar(dto);
+            return Ok();
+        }
+        [HttpDelete("{id}")]
+        public IActionResult Deletar(
+        [FromRoute] int id
+    )
+        {
+            _tocarService.Excluir(id);
+            return NoContent();
         }
     }
 }

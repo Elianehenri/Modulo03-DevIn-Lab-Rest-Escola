@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Banda.Domain.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,13 @@ namespace Banda.Domain.Models
 
         public Tocar()
         {
+        }
+
+        public void Update(TocarDTO dto)
+        {
+            Descricao = dto.Descricao;
+            NomeMusica = dto.NomeMusica;
+            SequenciaMusica = dto.SequenciaMusica;
         }
     }
 }

@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace Banda.Domain.Interfaces.Services
 {
-    public interface ITocarService
+    public interface ITocarPostService
     {
-        IList<TocarDTO> Listar();
-        void Alterar(TocarDTO dto);
-        void Excluir(int id);
+        void Inserir(TocarDTO dto);
     }
 }
