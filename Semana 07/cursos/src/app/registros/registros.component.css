@@ -1,18 +1,19 @@
-
+.navbar {
+  background: linear-gradient(to right, #4169E1, #87CEFA, #4169E1);
+ font-style: italic;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
 main{
   width: auto;
   margin: 0 auto;
   padding: 15px 30px 15px 30px;
   border: 0px solid ;
-  background: linear-gradient(to right, #87CEFA, #4169E1, #87CEFA);
+ /*background: linear-gradient(to right, #87CEFA, #4169E1, #87CEFA);*/
+  background: linear-gradient(to right, #87CEFA, #DAA520, #87CEFA);
 }
 
-.navbar {
-   background: linear-gradient(to right, #4169E1, #4169E1, #4169E1);
-  font-style: italic;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
+
 .card-c{
   background: linear-gradient(to right, #4169E1, #00CED1, #1E90FF);
 
