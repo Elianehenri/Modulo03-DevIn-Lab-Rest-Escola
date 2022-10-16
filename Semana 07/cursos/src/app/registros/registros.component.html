@@ -1,0 +1,63 @@
+<nav class="navbar ">
+
+  <a class="navbar-brand mx-auto" style="width: 200px;">
+    <p class="fs-1  fw-bold">Cursos</p>
+  </a>
+
+</nav>
+<main>
+  <div >
+    <div class=" teste  container col-xxl-8 px-4 py-5   bg-gradient mt-3 rounded">
+      <div class="card-c row flex-lg-row align-items-center g-5 py-2">
+        <div class="col-4 col-sm-8 col-lg-6">
+          <img src="https://png.pngtree.com/thumb_back/fh260/background/20220523/pngtree-isometric-concept-digital-contract-signature-image_1393809.jpg "
+            class="d-block mx-lg-auto img-fluid rounded"  alt="Bootstrap Themes" width="400" loading="lazy">
+        </div>
+        <div class="col-8 col-lg-6">
+          <h1 class="display-5 fw-bold lh-1  mb-4 text-black-20">Registro de Matéria</h1>
+          <form>
+            <div>
+              <label for="name" class="form-label text-black-20">Nome</label>
+              <input formControlName="name" type="text" class="form-control" id="name">
+            </div>
+            <div>
+              <label for="cargaHoraria" class="form-label text-black-20">Carga Horária</label>
+              <input formControlName="cargaHoraria" type="number" class="form-control" id="cargaHoraria">
+            </div>
+            <div class="col py-1">
+              <label for="escola" class="form-label text-black-20">Escola</label>
+              <input formControlName="escola" type="text" class="form-control" id="escola">
+            </div>
+            <div class="col py-1">
+              <label for="professor" class="form-label text-black-20">Professor</label>
+              <select formControlName="professor" class="form-select" name="professor" id="professor">
+                <option selected disable>Selecionar um professor</option>
+                <option value="otavio">Otávio</option>
+                <option value="vivian">Vivian</option>
+                <option value="leandro">Leandro</option>
+                <option value="claudia">Cláudia</option>
+              </select>
+            </div>
+            <div class="my-3">
+              <div class="form-check">
+                <input formControlName="materia" id="obrigatorio" name="materia" type="radio" class="form-check-input"
+                  required="" value="obrigatorio">
+                <label class="form-check-label text-blackfa-rotate-270" for="obrigatorio">Matéria Obrigatória</label>
+              </div>
+              <div class="form-check">
+                <input formControlName="materia" id="opcional" name="materia" type="radio" class="form-check-input"
+                  required="" value="opcional">
+                <label class="form-check-label text-black-20" for="opcional">Matéria Opcional</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer__container ">
+  <section class="footer__copyright">
+    &copy; DEVinHouse - Todos os direitos reservados
+  </section>
+</footer>

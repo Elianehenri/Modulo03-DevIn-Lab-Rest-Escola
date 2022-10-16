@@ -1,0 +1,78 @@
+
+
+main{
+  width: auto;
+  margin: 0 auto;
+  /*background-color: #ba79c7;*/
+  padding: 15px 30px 15px 30px;
+  border: 0px solid ;
+  background: linear-gradient(to right, #87CEFA, #4169E1, #87CEFA);
+}
+
+.navbar {
+  /*background-color:   #05635b;*/
+  background: linear-gradient(to right, #4169E1, #4169E1, #4169E1);
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.card-c{
+  background: linear-gradient(to right, #4169E1, #00CED1, #1E90FF);
+
+}
+
+
+
+
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding: 5px;
+  font-size: 18px;
+ /*background-color:   #05635b;*/
+ background: linear-gradient(to right, #4169E1, #4169E1, #4169E1);
+}
+.footer__copyright {
+  text-align: center;
+  margin-top: 20px;
+  /*background-color:   #05635b;*/
+  background: linear-gradient(to right, #4169E1, #4169E1, #4169E1);
+  font-weight: bold;
+  padding: 20px;
+  color: black
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social li a {
+  /* tamanho da imagem */
+  height: 32px;
+  width: 32px;
+
+  /* faz o indent no texto inserido */
+  color: transparent;
+  display: block;
+  text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+  background-image: url(/imagem/facebook.png);
+}
