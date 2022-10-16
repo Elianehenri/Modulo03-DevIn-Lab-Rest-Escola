@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-registros',
@@ -13,16 +13,34 @@ export class RegistrosComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  register = this.formBuilder.group({
-    nome: this.formBuilder.control(''),
-    cargaHoraria: this.formBuilder.control(''),
-    escola: this.formBuilder.control('SENAI/SC - Serviço Nacional de Aprendizagem Industrial'),
-    professor: this.formBuilder.control(''),
-    materia: this.formBuilder.control(''),
-  })
-  showForm(){
-    console.log(this.register);
+  formRegistro = this.formBuilder.group({
 
+    nome: this.formBuilder.control('',
+    [Validators.required,
+      Validators.minLength(3),
+      Validators.pattern('^[A-Za-z]*$')]),
+
+      cargaHoraria: this.formBuilder.control('',
+      [Validators.required,
+        Validators.min(30),
+        Validators.max(100)]),
+        escola: this.formBuilder.control('',
+        [Validators.required,
+          Validators.minLength(3),
+          Validators.pattern('^[A-Za-z]*$')]),
+          professor: this.formBuilder.control('',
+          [Validators.required]),
+          materia: this.formBuilder.control('',
+          [Validators.required]),
+        })
+
+  showForm(){
+    console.log(this.formRegistro);
+
+  }
+
+  resetForm(){
+    this.formRegistro.reset();
   }
 
 }
