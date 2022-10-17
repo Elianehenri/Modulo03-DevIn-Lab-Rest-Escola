@@ -8,5 +8,8 @@
 ### Exercicos Semana 03 - Autenticaçao e Autorizaçao => Vitor Lima
 #
 ### Exercicios Semana 04 - Clean Code Fundamentos, SOLID e Boas práticas (separação em camadas) => Jamil Salim
+#
+### Exercicios Semana 07 - Forms(reativo) e Bootstrap => Rayana Crsitina
+#
  
 
