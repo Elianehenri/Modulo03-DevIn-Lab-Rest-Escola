@@ -1,0 +1,133 @@
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\appsettings.Development.json
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\appsettings.json
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.exe
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.deps.json
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.runtimeconfig.json
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.pdb
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.csproj.AssemblyReference.cache
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.AssemblyInfoInputs.cache
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.AssemblyInfo.cs
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.csproj.CoreCompileInputs.cache
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\staticwebassets.build.json
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\staticwebassets.development.json
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\scopedcss\bundle\Banda.Api.styles.css
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.csproj.CopyComplete
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.dll
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\refint\Banda.Api.dll
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.pdb
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.genruntimeconfig.cache
+D:\exerci\Banda\Banda.Api\obj\Debug\net6.0\ref\Banda.Api.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Humanizer.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\exerci\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\appsettings.Development.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\appsettings.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.exe
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.deps.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.runtimeconfig.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Api.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\AutoMapper.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Humanizer.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.DI.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Domain.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.DI.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Domain.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\bin\Debug\net6.0\Banda.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.csproj.AssemblyReference.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.AssemblyInfoInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.AssemblyInfo.cs
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.csproj.CoreCompileInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\staticwebassets.build.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\staticwebassets.development.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\scopedcss\bundle\Banda.Api.styles.css
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.csproj.CopyComplete
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\refint\Banda.Api.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\Banda.Api.genruntimeconfig.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Api\obj\Debug\net6.0\ref\Banda.Api.dll

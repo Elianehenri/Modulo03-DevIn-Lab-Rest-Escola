@@ -1,0 +1,51 @@
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\bin\Debug\net6.0\Escola.Infra.deps.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\bin\Debug\net6.0\Escola.Infra.runtimeconfig.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\bin\Debug\net6.0\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\bin\Debug\net6.0\Escola.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\bin\Debug\net6.0\Escola.Domain.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\bin\Debug\net6.0\Escola.Domain.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.AssemblyReference.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.AssemblyInfoInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.AssemblyInfo.cs
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.CoreCompileInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.CopyComplete
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\refint\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.genruntimeconfig.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\src\Escola.Infra\obj\Debug\net6.0\ref\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\bin\Debug\net6.0\Escola.Infra.deps.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\bin\Debug\net6.0\Escola.Infra.runtimeconfig.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\bin\Debug\net6.0\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\bin\Debug\net6.0\Escola.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\bin\Debug\net6.0\Escola.Domain.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\bin\Debug\net6.0\Escola.Domain.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.AssemblyReference.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.AssemblyInfoInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.AssemblyInfo.cs
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.CoreCompileInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.CopyComplete
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\refint\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\Escola.Infra.genruntimeconfig.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\src\Escola.Infra\obj\Debug\net6.0\ref\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\bin\Debug\net6.0\Escola.Infra.deps.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\bin\Debug\net6.0\Escola.Infra.runtimeconfig.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\bin\Debug\net6.0\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\bin\Debug\net6.0\Escola.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\bin\Debug\net6.0\Escola.Domain.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\bin\Debug\net6.0\Escola.Domain.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.AssemblyReference.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.AssemblyInfoInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.AssemblyInfo.cs
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.CoreCompileInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.csproj.CopyComplete
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\refint\Escola.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\Escola.Infra.genruntimeconfig.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 02\Escola\Escola.Infra\obj\Debug\net6.0\ref\Escola.Infra.dll

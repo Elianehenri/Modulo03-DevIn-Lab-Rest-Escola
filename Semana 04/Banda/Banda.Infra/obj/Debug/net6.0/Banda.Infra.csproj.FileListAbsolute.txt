@@ -1,0 +1,17 @@
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\bin\Debug\net6.0\Banda.Infra.deps.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\bin\Debug\net6.0\Banda.Infra.runtimeconfig.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\bin\Debug\net6.0\Banda.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\bin\Debug\net6.0\Banda.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\bin\Debug\net6.0\Banda.Domain.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\bin\Debug\net6.0\Banda.Domain.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.csproj.AssemblyReference.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.AssemblyInfoInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.AssemblyInfo.cs
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.csproj.CoreCompileInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.csproj.CopyComplete
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\refint\Banda.Infra.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\Banda.Infra.genruntimeconfig.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Infra\obj\Debug\net6.0\ref\Banda.Infra.dll

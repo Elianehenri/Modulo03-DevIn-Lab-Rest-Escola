@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ODEqhiTA1/pEchDT7GqYEPGIsLdU9lgW6fLpdvaHIZ+P4PL6yohsB+gcZBImIi6WKw+mIifgGAD+M0ImDfQEcg==",
+  "success": true,
+  "projectFilePath": "D:\\Modulo 03\\Modulo03-DevIn-Lab-Rest-Escola\\Semana 04\\Banda\\Banda.Domain\\Banda.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elian\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\elian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

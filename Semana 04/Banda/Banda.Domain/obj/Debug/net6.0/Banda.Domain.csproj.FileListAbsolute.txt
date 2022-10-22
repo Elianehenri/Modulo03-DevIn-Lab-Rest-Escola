@@ -1,0 +1,12 @@
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\bin\Debug\net6.0\Banda.Domain.deps.json
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\bin\Debug\net6.0\Banda.Domain.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\bin\Debug\net6.0\Banda.Domain.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\Banda.Domain.csproj.AssemblyReference.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\Banda.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\Banda.Domain.AssemblyInfoInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\Banda.Domain.AssemblyInfo.cs
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\Banda.Domain.csproj.CoreCompileInputs.cache
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\Banda.Domain.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\refint\Banda.Domain.dll
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\Banda.Domain.pdb
+D:\Modulo 03\Modulo03-DevIn-Lab-Rest-Escola\Semana 04\Banda\Banda.Domain\obj\Debug\net6.0\ref\Banda.Domain.dll
