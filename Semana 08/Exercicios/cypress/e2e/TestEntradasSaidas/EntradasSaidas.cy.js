@@ -6,6 +6,7 @@ context("TestesEntradasSaidas", () => {
   before(() => {
     cy.visit("https://localhost:44360/ControleEntradasSaidas.aspx");
   });
+  
   afterEach(() => {
     cy.get("input").contains("Enviar").click();
     for (let i = 1; i <= 7; i++) {
