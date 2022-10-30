@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uber", "uber\uber.csproj", "{7AD283EB-7815-474A-B6EA-754625972131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.uber", "test.uber\test.uber.csproj", "{523DD46B-DE1D-477C-8B5D-86164031EA43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AD283EB-7815-474A-B6EA-754625972131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD283EB-7815-474A-B6EA-754625972131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD283EB-7815-474A-B6EA-754625972131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD283EB-7815-474A-B6EA-754625972131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523DD46B-DE1D-477C-8B5D-86164031EA43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523DD46B-DE1D-477C-8B5D-86164031EA43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523DD46B-DE1D-477C-8B5D-86164031EA43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523DD46B-DE1D-477C-8B5D-86164031EA43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
