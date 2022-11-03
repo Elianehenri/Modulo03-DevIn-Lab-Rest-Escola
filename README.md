@@ -12,3 +12,8 @@
 ### Exercicios Semana 07 - Forms(reativo) e Bootstrap => Rayana Crsitina
 # 
 ### Exercicios Semana 08 - Testes => Introdução, tipos e ferramentas (cypress) =>Otto Rodrigo Hanneman
+# 
+### Exercicios Semana 09 - .net Core => TDD e testes unitários (Nunit) => Eduardo Worrel
+
+# 
+### Exercicios Semana 10 - Angular => TDD e testes unitários (Mocha/Jasmine) => Julia Barbosa
