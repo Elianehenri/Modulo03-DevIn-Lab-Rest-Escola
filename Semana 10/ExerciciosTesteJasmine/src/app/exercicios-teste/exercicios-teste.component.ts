@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciciosTesteComponent implements OnInit {
 
+  cidades:string[] = ['Urubici','Lages', 'Florianopolis','Rio de Janeiro']
   constructor() { }
 
   ngOnInit(): void {
