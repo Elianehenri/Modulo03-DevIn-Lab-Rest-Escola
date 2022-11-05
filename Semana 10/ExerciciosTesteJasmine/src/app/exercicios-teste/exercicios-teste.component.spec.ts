@@ -26,4 +26,9 @@ describe('ExerciciosTesteComponent', () => {
     const cliente = component.returnCliente('Eliane');
     expect(component.returnCliente('Eliane')).toBe(cliente);
   });
+
+  it('validar uso do toEqual', () => {
+    const empresario = component.returnCliente('Eliane');
+    expect(component.returnCliente('Eliane')).toEqual(empresario);
+  });
 });
