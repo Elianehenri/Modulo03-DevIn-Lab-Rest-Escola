@@ -31,4 +31,9 @@ describe('ExerciciosTesteComponent', () => {
     const empresario = component.returnCliente('Eliane');
     expect(component.returnCliente('Eliane')).toEqual(empresario);
   });
+
+  it('validar o uso do ti/Match', () => {
+    const cpf = component.exibirCpf('12345678912')
+    expect(cpf).toMatch(/^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}/)
+  });
 });

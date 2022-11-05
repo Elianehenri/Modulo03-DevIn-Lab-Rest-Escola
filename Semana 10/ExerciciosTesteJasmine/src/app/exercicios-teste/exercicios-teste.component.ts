@@ -18,5 +18,8 @@ export class ExerciciosTesteComponent implements OnInit {
     return cliente;
   }
 
- 
+    exibirCpf(value:string):string{
+      let cpf = value;
+      return cpf;
+    }
 }
