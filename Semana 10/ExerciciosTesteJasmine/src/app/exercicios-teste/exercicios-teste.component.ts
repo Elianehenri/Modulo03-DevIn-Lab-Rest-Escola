@@ -22,4 +22,8 @@ export class ExerciciosTesteComponent implements OnInit {
       let cpf = value;
       return cpf;
     }
+
+    returnNull(){
+      return;
+    }
 }

@@ -22,18 +22,35 @@ describe('ExerciciosTesteComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  //exercicio 01
   it('validar uso do toBe', () => {
     const cliente = component.returnCliente('Eliane');
     expect(component.returnCliente('Eliane')).toBe(cliente);
   });
 
+    //exercicio 02
   it('validar uso do toEqual', () => {
     const empresario = component.returnCliente('Eliane');
     expect(component.returnCliente('Eliane')).toEqual(empresario);
   });
 
-  it('validar o uso do ti/Match', () => {
+    //exercicio 03
+  it('validar o uso do toMatch', () => {
     const cpf = component.exibirCpf('12345678912')
     expect(cpf).toMatch(/^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}/)
+  });
+
+
+  //exercicio 04
+  it('validar o uso do toBeDefined', () => {
+    const cpf = component.exibirCpf('12345678912');;
+
+    expect(cpf).toMatch(/^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}/)
+    expect(cpf).toBeDefined();
+  });
+
+  it('validar o uso do toBeUndefined', () => {
+
+    expect(component.returnNull()).toBeUndefined ();
   });
 });
