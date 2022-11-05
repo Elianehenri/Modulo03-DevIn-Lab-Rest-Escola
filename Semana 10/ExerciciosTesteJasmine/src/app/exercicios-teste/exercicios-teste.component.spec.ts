@@ -65,6 +65,13 @@ describe('ExerciciosTesteComponent', () => {
     expect(component.multiplicar).toBeTruthy ();
   });
 
+  //Exercicio 06
+
+  it('validar o uso do toContain', () => {
+
+    expect(component.cidades).toContain('Urubici');
+  });
+
 
 
 });
