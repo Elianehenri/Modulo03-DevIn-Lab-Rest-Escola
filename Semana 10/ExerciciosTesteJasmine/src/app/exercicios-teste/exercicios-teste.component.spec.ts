@@ -53,4 +53,18 @@ describe('ExerciciosTesteComponent', () => {
 
     expect(component.returnNull()).toBeUndefined ();
   });
+
+  //Exercicio 05
+  it('validar o uso do toBeTruthy', () => {
+
+    expect(component.multiplicar).toBeTruthy ();
+  });
+
+  it('validar o uso do toBeFalse', () => {
+
+    expect(component.multiplicar).toBeTruthy ();
+  });
+
+
+
 });

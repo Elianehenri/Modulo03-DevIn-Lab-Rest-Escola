@@ -26,4 +26,15 @@ export class ExerciciosTesteComponent implements OnInit {
     returnNull(){
       return;
     }
+
+    multiplicar(n1:number, n2:number):number{
+      return n1*n2;
+    }
+
+    exemploTeste():boolean{
+      let n1 = 3;
+      if(n1 > 6)
+      return true;
+      return false;
+    }
 }
