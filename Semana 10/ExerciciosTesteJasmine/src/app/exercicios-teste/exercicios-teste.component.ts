@@ -38,4 +38,12 @@ export class ExerciciosTesteComponent implements OnInit {
       return true;
       return false;
     }
+
+    private exibirEmail(){
+      return 'eliane@gmail.com'
+    }
+
+    testeEmail():void{
+      this.exibirEmail();
+    }
 }

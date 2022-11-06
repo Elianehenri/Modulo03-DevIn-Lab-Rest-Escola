@@ -85,5 +85,15 @@ describe('ExerciciosTesteComponent', () => {
     expect(result).toBeLessThan(30);
   });
 
+  //Exercicio 08
+  it('deve chamar metodo exibiEmail(), quando chamar o metodo testeEmail(), uso SpyOn', () => {
+      const email = 'exibirEmail';
+
+      spyOn<any>(component, 'exibirEmail');
+
+      component.testeEmail();
+      expect(component[email]).toHaveBeenCalled();
+  });
+
 
 });
