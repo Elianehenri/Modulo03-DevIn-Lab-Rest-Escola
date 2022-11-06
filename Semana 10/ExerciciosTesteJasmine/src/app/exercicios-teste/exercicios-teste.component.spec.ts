@@ -72,6 +72,18 @@ describe('ExerciciosTesteComponent', () => {
     expect(component.cidades).toContain('Urubici');
   });
 
+   //Exercicio 07
+   it('validar o uso do toBeGreaterThan', () => {
+    const result = component.multiplicar(5,2);
+
+    expect(result).toBeGreaterThan(8);
+  });
+
+  it('validar o uso do toBLessThan', () => {
+    const result = component.multiplicar(5,4);
+
+    expect(result).toBeLessThan(30);
+  });
 
 
 });
